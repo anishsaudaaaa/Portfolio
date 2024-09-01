@@ -1,0 +1,151 @@
+.Button {
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 15px 30px;
+  margin: auto;
+  opacity: 10px;
+  color: blanchedalmond;
+  background-color: rgb(137, 105, 81);
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.Button:hover {
+  color: beige;
+  background-color: navy;
+}
+
+/* form {
+  text-decoration: solid;
+}
+
+fieldset {
+  width: 900px;
+}
+
+header {
+  background: scroll;
+  background-color: aqua;
+  text-align: center;
+  text-decoration: solid;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: aquamarine;
+  margin-top: 20px;
+} 
+.Personal-Information {
+  background-color: rgb(101, 147, 147);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  color: yellow;
+  }*/
+/* General Body and Form Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Form Container */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Fieldset Styling */
+fieldset {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #495057;
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Button Styling */
+.Button,
+.btn-outline-success {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Button:hover,
+.btn-outline-success:hover {
+  background-color: #218838;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #6c757d;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Additional Styling */
+h1 {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-text {
+  color: #6c757d;
+}

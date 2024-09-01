@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced CSS Selector Challenge</title>
+    <style>
+      /* General body styling */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #e9ecef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      /* Main card container styling using attribute selector */
+      div[class^="profile-card"] {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        width: 300px;
+        margin: 20px;
+      }
+
+      /* Profile image styling */
+      .profile-card > img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Profile details */
+      .profile-details {
+        padding: 20px;
+      }
+
+      /* Name styling - direct child combinator */
+      .profile-details > .name {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      /* Job title styling - adjacent sibling combinator */
+      .name + .title {
+        color: #6c757d;
+        font-size: 14px;
+      }
+      /* Contact info - general sibling combinator */
+      .name ~ .contact-info {
+        margin-top: 10px;
+      }
+
+      /* Link styling - attribute value contains selector */
+      a[href*="mailto:"] {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a[href*="mailto:"]:hover {
+        text-decoration: underline;
+      }
+
+      /* Pseudo-element ::before for list items */
+      .contact-info li::before {
+        content: "• ";
+        color: #007bff;
+      }
+
+      /* Pseudo-class :nth-child for alternating list item colors */
+      .contact-info li:nth-child(odd) {
+        background-color: #f8f9fa;
+      }
+
+      /* Pseudo-class :not to style non-active status */
+      .status:not(.active) {
+        color: #dc3545;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-card">
+      <img
+        src="https://cdn.pixabay.com/photo/2023/10/01/12/56/shih-tzu-8287355_1280.jpg"
+        alt="Profile Image"
+      />
+      <div class="profile-details">
+        <div class="name">Jane Doe</div>
+        <div class="title">Web Developer</div>
+        <ul class="contact-info">
+          <li>
+            <a href="mailto:jane.doe@example.com">jane.doe@example.com</a>
+          </li>
+          <li>Website: <a href="http://www.example.com">www.example.com</a></li>
+          <li>Location: New York, USA</li>
+        </ul>
+        <div class="status">Status: <span class="active">Active</span></div>
+      </div>
+    </div>
+  </body>
+</html>
