@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_-wHkrCus5fDQF3w4oNK249JCPaiEbI4GEpwOqqwwWejwAFGp-Pp7OemJHjwJ60w1mg&usqp=CAU"
+    />
     <title>SaudaaaaaPortfolio</title>
   </head>
   <body>
@@ -11,13 +16,17 @@
       <!-- Header Start -->
       <header>
         <div class="wrapper">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#certificates">Certificates</a>
-          <a href="#contact">Contact</a>
+          <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+          <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
       </header>
+
       <!-- Header End -->
 
       <!-- Main Section Start -->
@@ -25,30 +34,26 @@
         <!-- About Section -->
         <section id="about" class="section about">
           <h1>About Me</h1>
-          <p>
-            Hello! I am <b>Anish Sauda</b>, a passionate and dedicated Bachelor
-            of Computer Applications (BCA) student with a strong foundation in
-            computer science and software development. Currently pursuing my
-            degree at <b>Institute of Information Technology & Management</b>, I
-            have developed a keen interest in areas such as programming, web
-            development, database management, and software engineering.
-            Throughout my academic journey, I have honed my skills in various
-            programming languages, including Java, C++, Python, and JavaScript.
-            My coursework and projects have provided me with hands-on experience
-            in developing software applications, designing user-friendly
-            websites, and managing databases efficiently. My goal is to leverage
-            my knowledge and skills to create innovative solutions that address
-            real-world problems and contribute to the ever-evolving field of
-            technology. In this portfolio, you will find a showcase of my
-            academic projects, personal projects, and any relevant work
-            experience or internships. Each project demonstrates my ability to
-            apply theoretical knowledge to practical scenarios, highlighting my
-            problem-solving abilities, creativity, and attention to detail. I am
-            eager to continue learning and growing in the field of computer
-            science and look forward to opportunities that challenge me and
-            allow me to make a meaningful impact. Thank you for taking the time
-            to review my portfolio.
-          </p>
+          <div class="about-content">
+            <p>
+              Hello! I am <b>Anish Sauda</b>, a passionate and dedicated
+              Bachelor of Computer Applications (BCA) student with a strong
+              foundation in computer science and software development. Currently
+              pursuing my degree at
+              <b>Institute of Information Technology & Management</b>, I have
+              developed a keen interest in areas such as programming, web
+              development, database management, and software engineering.
+              Throughout my academic journey, I have honed my skills in various
+              programming languages, including Java, C++, Python, and
+              JavaScript. My coursework and projects have provided me with
+              hands-on experience in developing software applications, designing
+              user-friendly websites, and managing databases efficiently. My
+              goal is to leverage my knowledge and skills to create innovative
+              solutions that address real-world problems and contribute to the
+              ever-evolving field of technology.
+            </p>
+            <img src="#" alt="Anish Sauda" class="about-image" />
+          </div>
         </section>
 
         <!-- Projects Section -->
@@ -93,12 +98,8 @@
           <h1>Certificates</h1>
           <div class="certificate-list">
             <div class="certificate-item">
-              <h2>Certificate One</h2>
-              <p>
-                Certificate Title: PARTICIPANTS CERTIFICATE - TASVEER
-                COMPETITION <br />
-                Date: 17th October 2022
-              </p>
+              <h2>PARTICIPANTS CERTIFICATE - TASVEER COMPETITION</h2>
+              <p>Date: 17th October 2022</p>
               <a
                 href="/PARTICIPANTS CERTIFICATE - TASVEER COMPETITION_50-50 (1).pdf"
                 class="btn"
@@ -108,10 +109,8 @@
             <!-- Add more certificates as needed -->
 
             <div class="certificate-item">
-              <h2>Certificate Two</h2>
+              <h2>Summer Internship Completion Certificate</h2>
               <p>
-                Certificate Title: Summer Internship Completion Certificate
-                <br />
                 Issuing Organization: Metafiser Company <br />Duration time:
                 24th June to 2nd August 2024
               </p>

@@ -3,12 +3,8 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333; /* Updated text color */
-  background: linear-gradient(
-    135deg,
-    #f0f9ff 0%,
-    #e6f0ff 100%
-  ); /* Gradient background */
+  color: #333;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e6f0ff 100%);
 }
 
 .wrapper {
@@ -18,11 +14,7 @@ body {
 }
 
 header {
-  background: linear-gradient(
-    135deg,
-    #a2c2e3 0%,
-    #8ab8e6 100%
-  ); /* Gradient header background */
+  background: linear-gradient(135deg, #a2c2e3 0%, #8ab8e6 100%);
   color: #fff;
   padding: 15px 0;
   position: sticky;
@@ -37,7 +29,7 @@ header .wrapper {
 }
 
 header a {
-  color: #ffffff; /* White link color */
+  color: #ffffff;
   text-decoration: none;
   margin: 0 20px;
   font-weight: 600;
@@ -45,7 +37,7 @@ header a {
 }
 
 header a:hover {
-  color: #3a7bd5; /* Darker blue for hover effect */
+  color: #3a7bd5;
 }
 
 /* Main Section Styles */
@@ -56,11 +48,7 @@ main {
 .section {
   padding: 60px 20px;
   margin-bottom: 30px;
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #f0f9ff 100%
-  ); /* Gradient background for sections */
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -68,14 +56,65 @@ main {
 .section h1 {
   font-size: 2.5rem;
   margin-bottom: 25px;
-  color: #004b8d; /* Dark blue for section headings */
+  color: #004b8d;
 }
 
 /* About Section */
-.about p {
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between the text and the image */
+  flex-direction: column; /* Default to column for smaller viewports */
+}
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row; /* Side by side on larger screens */
+  }
+}
+
+.about-content {
+  display: flex; /* Use flexbox to arrange the items */
+  align-items: flex-start; /* Align items to the start (top) */
+  gap: 20px; /* Add some space between the elements */
+}
+
+.about-content {
+  display: flex; /* Use flexbox to arrange the items */
+  align-items: flex-start; /* Align items to the start (top) */
+  gap: 20px; /* Add some space between the elements */
+  justify-content: space-between; /* Distribute items with space between them */
+}
+
+/* Style for the paragraph */
+.about-content p {
+  flex: 0 0 50%; /* Fix the paragraph to take 50% of the width */
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #555; /* Text color */
+  color: #555;
+  text-align: left; /* Ensure text is aligned to the left */
+  margin: 0; /* Remove default margin */
+}
+
+/* Style for the image within the about-content */
+.about-content .about-image {
+  flex: 0 0 50%; /* Keep the image section 50% of the width */
+  max-width: 100%; /* Ensure the image scales properly within its space */
+  height: auto; /* Maintain the aspect ratio of the image */
+  object-fit: cover; /* Optional: scales image to cover the container */
+  display: flex; /* Ensure the image itself is aligned correctly */
+  justify-content: flex-end; /* Align image to the right within its flex container */
+  align-items: center; /* Center the image vertically */
+}
+
+/* Specific styling for the image itself */
+.about-image {
+  width: 100px; /* Reduce the image width to make it smaller */
+  height: auto;
+  border-radius: 50%; /* Keeps the image circular */
+  flex-shrink: 0; /* Prevents the image from shrinking */
+  margin-left: auto; /* Pushes the image to the right within its flex item */
 }
 
 /* Projects Section */
@@ -87,11 +126,7 @@ main {
 
 .project-item {
   padding: 20px;
-  background: linear-gradient(
-    135deg,
-    #e0f7ff 0%,
-    #b3e0ff 100%
-  ); /* Gradient background for project items */
+  background: linear-gradient(135deg, #e0f7ff 0%, #b3e0ff 100%);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -105,22 +140,18 @@ main {
 .project-item h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: #003a6d; /* Darker blue for project item headings */
+  color: #003a6d;
 }
 
 .project-item p {
   margin-bottom: 20px;
-  color: #666; /* Text color */
+  color: #666;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: linear-gradient(
-    135deg,
-    #004b8d 0%,
-    #003a6d 100%
-  ); /* Gradient button background */
+  background: linear-gradient(135deg, #004b8d 0%, #003a6d 100%);
   color: #fff;
   text-decoration: none;
   border-radius: 25px;
@@ -128,11 +159,7 @@ main {
 }
 
 .btn:hover {
-  background: linear-gradient(
-    135deg,
-    #003a6d 0%,
-    #00274d 100%
-  ); /* Even darker blue on hover */
+  background: linear-gradient(135deg, #003a6d 0%, #00274d 100%);
   transform: translateY(-3px);
 }
 
@@ -146,16 +173,12 @@ main {
 }
 
 .skills li {
-  background: linear-gradient(
-    135deg,
-    #b3e0ff 0%,
-    #a0c8e3 100%
-  ); /* Gradient background for skills items */
+  background: linear-gradient(135deg, #b3e0ff 0%, #a0c8e3 100%);
   padding: 10px 15px;
   border-radius: 20px;
   font-size: 1rem;
-  color: #003a6d; /* Dark blue text color */
-  border: 1px solid #a0c8e3; /* Slightly darker border color */
+  color: #003a6d;
+  border: 1px solid #a0c8e3;
 }
 
 /* Certificate Section */
@@ -167,11 +190,7 @@ main {
 
 .certificate-item {
   padding: 20px;
-  background: linear-gradient(
-    135deg,
-    #e0f7ff 0%,
-    #b3e0ff 100%
-  ); /* Gradient background for certificate items */
+  background: linear-gradient(135deg, #e0f7ff 0%, #b3e0ff 100%);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -185,47 +204,24 @@ main {
 .certificate-item h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: #003a6d; /* Darker blue for certificate headings */
+  color: #003a6d;
 }
 
 .certificate-item p {
   margin-bottom: 20px;
-  color: #666; /* Text color */
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: linear-gradient(
-    135deg,
-    #004b8d 0%,
-    #003a6d 100%
-  ); /* Gradient button background */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 25px;
-  transition: background 0.3s, transform 0.2s;
-}
-
-.btn:hover {
-  background: linear-gradient(
-    135deg,
-    #003a6d 0%,
-    #00274d 100%
-  ); /* Even darker blue on hover */
-  transform: translateY(-3px);
+  color: #666;
 }
 
 /* Contact Section */
 .contact a {
-  color: #004b8d; /* Dark blue for links */
+  color: #004b8d;
   text-decoration: none;
   font-weight: bold;
 }
 
 .contact a:hover {
   text-decoration: underline;
-  color: #003a6d; /* Darker blue on hover */
+  color: #003a6d;
 }
 
 .contact form {
@@ -237,7 +233,7 @@ main {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #004b8d; /* Dark blue for labels */
+  color: #004b8d;
 }
 
 .contact form input,
@@ -245,26 +241,22 @@ main {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border: 1px solid #b3e0ff; /* Light blue border */
+  border: 1px solid #b3e0ff;
   border-radius: 8px;
   font-size: 1rem;
   box-sizing: border-box;
-  background: #ffffff; /* White background for inputs */
+  background: #ffffff;
 }
 
 .contact form input::placeholder,
 .contact form textarea::placeholder {
-  color: #868e96; /* Placeholder color */
+  color: #868e96;
 }
 
 .contact form button {
   padding: 12px 25px;
   border: none;
-  background: linear-gradient(
-    135deg,
-    #004b8d 0%,
-    #003a6d 100%
-  ); /* Gradient button background */
+  background: linear-gradient(135deg, #004b8d 0%, #003a6d 100%);
   color: #fff;
   border-radius: 25px;
   cursor: pointer;
@@ -272,11 +264,7 @@ main {
 }
 
 .contact form button:hover {
-  background: linear-gradient(
-    135deg,
-    #003a6d 0%,
-    #00274d 100%
-  ); /* Even darker blue on hover */
+  background: linear-gradient(135deg, #003a6d 0%, #00274d 100%);
   transform: translateY(-3px);
 }
 
@@ -312,7 +300,22 @@ main {
   animation: fadeIn 1s ease-out;
 }
 
-/* Responsive Design */
+/* Responsive Design Enhancements */
+@media (max-width: 1024px) {
+  .section {
+    padding: 50px 15px;
+  }
+
+  header .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header a {
+    margin: 10px 0;
+  }
+}
+
 @media (max-width: 768px) {
   .wrapper {
     padding: 0 10px;
@@ -320,6 +323,7 @@ main {
 
   header .wrapper {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   header a {
@@ -327,6 +331,127 @@ main {
   }
 
   .section {
-    padding: 30px;
+    padding: 30px 10px;
   }
+
+  .section h1 {
+    font-size: 2rem;
+  }
+
+  .project-item,
+  .certificate-item {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header a {
+    margin: 5px 0;
+  }
+
+  .section h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-list,
+  .certificate-list {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .skills ul {
+    flex-direction: column;
+  }
+
+  .skills li {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between the text and the image */
+}
+
+.about-content p {
+  flex: 1; /* Allows the paragraph to take up remaining space */
+}
+
+.about-image {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  flex-shrink: 0; /* Prevents the image from shrinking */
+}
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Hide Navigation Links by Default on Small Screens */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+/* Show the Toggle Button on Small Screens */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* Show Dropdown when Active */
+.nav-links.active {
+  display: flex;
 }
